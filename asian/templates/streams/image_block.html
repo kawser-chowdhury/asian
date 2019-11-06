@@ -1,0 +1,7 @@
+{% load wagtailimages_tags %}
+<div class="container mb-sm-5 mt-sm-5">
+    {% image value.photo fill-300x200 as img %}
+    <div>
+        <img src="{{ img.url }}" alt="{{ img.alt }}" class="card-img-top" />
+    </div>
+</div>
